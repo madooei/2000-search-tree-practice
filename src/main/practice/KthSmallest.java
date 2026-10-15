@@ -20,37 +20,13 @@ public final class KthSmallest {
   // counting k from 1. Throws IllegalArgumentException if k is less than 1 or
   // larger than the number of values in the tree.
   public static <T> T kthSmallest(Node<T> root, int k) {
-    if (k <= 0) {
-      throw new IllegalArgumentException("k must be positive");
-    }
-
-    State<T> state = new State<>();
-    kthSmallest(root, k, state);
-
-    if (!state.found) {
-      throw new IllegalArgumentException("k is larger than the tree");
-    }
-    return state.value;
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   // Visits the subtree rooted at node in-order and stops at the k-th visit.
   private static <T> void kthSmallest(Node<T> node, int k, State<T> state) {
-    if (node == null || state.found) {
-      return;
-    }
-
-    kthSmallest(node.left, k, state);
-    if (state.found) {
-      return;
-    }
-
-    state.seen++;
-    if (state.seen == k) {
-      state.value = node.value;
-      state.found = true;
-      return;
-    }
-
-    kthSmallest(node.right, k, state);
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 }
