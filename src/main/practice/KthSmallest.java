@@ -35,7 +35,7 @@ public final class KthSmallest {
 
   // Visits the subtree rooted at node in-order and stops at the k-th visit.
   private static <T> void kthSmallest(Node<T> node, int k, State<T> state) {
-    if (node == null || state.found) {
+    if (node == null) {
       return;
     }
 
