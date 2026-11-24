@@ -40,7 +40,7 @@ code/
 - `scripts/test.sh practice.ValidateBstTest` — compiles everything and runs only that test class. Use this while you are working on one problem and the other is still empty.
 - `scripts/run.sh demo.KthSmallestDemo` — compiles everything and runs that one demo. Every class you implement has its own demo, `<Class>Demo`.
 
-## What's here
+## Contents
 
 - `practice.ValidateBst` — `isValidBst`, which returns whether a binary tree satisfies the binary search tree ordering property. The empty tree is valid, and a tree with a duplicate value is not.
 - `practice.KthSmallest` — `kthSmallest`, which returns the k-th smallest value in a binary search tree, counting from 1. It throws `IllegalArgumentException` if k is less than 1 or larger than the number of values.
